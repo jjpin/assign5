@@ -23,7 +23,7 @@ final int ENEMY_DIAMOND = 2;
 
 float treasureX;
 float treasureY;
-int fighterX;
+int fighterX; 
 int fighterY;
 int enemyCount = 8;
 int[] enemyX = new int[enemyCount];
