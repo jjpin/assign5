@@ -54,7 +54,7 @@ void setup () {
   treasure = loadImage("img/treasure.png");
   hp = loadImage("img/hp.png");
   bullet = loadImage("img/shoot.png");
-  for(int i=0; i<5; i++){
+  for(int i=0; i<5; i++){ 
     flaming[i] = loadImage("img/flame" + (i+1) +".png");
   }
   
