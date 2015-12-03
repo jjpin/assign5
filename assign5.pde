@@ -1,5 +1,13 @@
-PImage start1, start2, end1, end2, bg1, bg2;
-PImage enemy, treasure, fighter, bullet;
+PImage start1;
+PImage start2; 
+PImage end1;
+PImage end2;
+PImage bg1;
+PImage bg2;
+PImage enemy;
+PImage treasure;
+PImage fighter;
+PImage bullet;
 PImage [] flaming = new PImage[5];
 PImage hp;
 PFont board;
@@ -23,7 +31,7 @@ final int ENEMY_DIAMOND = 2;
 
 float treasureX;
 float treasureY;
-int fighterX; 
+int fighterX;
 int fighterY;
 int enemyCount = 8;
 int[] enemyX = new int[enemyCount];
@@ -54,7 +62,7 @@ void setup () {
   treasure = loadImage("img/treasure.png");
   hp = loadImage("img/hp.png");
   bullet = loadImage("img/shoot.png");
-  for(int i=0; i<5; i++){ 
+  for(int i=0; i<5; i++){
     flaming[i] = loadImage("img/flame" + (i+1) +".png");
   }
   
@@ -79,8 +87,8 @@ void setup () {
     bulletLimit[i] = false;
   }
   
-  board = createFont("Arial", 24);
-  textFont(board, 16);
+  board = createFont("Arial", 32);
+  textFont(board, 32);
   textAlign(LEFT);
   
   addEnemy(ENEMY_STRAIGHT);
